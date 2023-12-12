@@ -1,0 +1,156 @@
+@import 'video-react/dist/video-react.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.loader {
+  border-top-color: #3498db;
+  -webkit-animation: spinner 1.5s linear infinite;
+  animation: spinner 1.5s linear infinite;
+}
+
+.upload svg path {
+  stroke: #697586;
+}
+
+.sidebar svg path {
+  stroke: #9aa4b2;
+}
+
+.sidebarActive svg path {
+  stroke: #53b1fd;
+}
+
+.icon path {
+  stroke: #9aa4b2;
+}
+
+.youtubeEmbed {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.youtubeEmbed iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.youtubeEmbed iframe .ytp-large-play-button {
+  width: 40px;
+  height: 30px;
+}
+
+a {
+  color: #53b1fd;
+}
+
+a svg.active path,
+a svg.active rect {
+  stroke: #53b1fd;
+}
+
+.multi-select .select__control {
+  background: #121926;
+  border: none;
+  border-radius: 8px;
+}
+
+.multi-select .select__control .select__multi-value {
+  background: #364152;
+  border-radius: 16px;
+}
+
+.multi-select .select__multi-value__label {
+  color: #cdd5df;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.multi-select .select__multi-value__remove {
+  color: #cdd5df;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #38383857;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #38383857;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9d9d9db8;
+  border: none;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+#tab-select .select__input {
+  color: white !important;
+}
+
+.list-disc {
+  list-style-type: disc !important;
+}
+
+.list-outside {
+  list-style-position: outside !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.fbBtn {
+  background-color:#4267B2;
+}
